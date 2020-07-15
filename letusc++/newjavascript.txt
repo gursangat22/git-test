@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>GURSANGAT</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1> Hello World! </h1>
+    <p class="classroom">this is class</p>
+    <p id="idone"> my id </p>
+    <p>this was added via html </p>
+       <input type="text" name="" id="myform" placeholder="Search here">
+     <button onclick="myvalidation()">click me</button>
+
+  <form class="mmyform"> <input type="text" name="username" placeholder="Username">
+  <button type="submit">Submit</button>
+
+ 
+    <!-- <script src="script.js">
+    </script> -->
+    <script src="validation.js"> </script>
+  </body>
+</html>
+
+
+//alert('nice');
+// function definition
+function myvalidation()
+{
+const valuee=document.querySelector('#myform').value;
+console.log(valuee);//jo v myform de andar value bhari oh ajaegi
+if(isNaN(valuee)||valuee<0||valuee>20)
+{
+  console.log('Wrong Input');
+}
+else
+{
+  console.log('Right Input '+ valuee);
+}
+}
+
+//form validation 27/6/2020
+
+document.querySelector(".mmyform").addEventListener('submit',(event)=>{
+  event.preventDefault();
+console.log(event.target.username.value);
+//default form cho delete karan lai input
+event.target.username.value='';
+})
+
+
+
+
+
+
+
+//alert('jhj');
+//console.log(document.head);
+//console.log(document.URL);
+//console.log(document.title);
+// console.log('dwhjddw');
+// console.log(document.all);
+// console.log(document.body);
+// console.log(document.getElementsByClassName('classroom'));
+// console.log(document.getElementById('idone'));
+console.log(document.querySelector('#idone'));
+console.log(document.querySelector('p'));
+let myelements=document.querySelector('p');
+myelements.textContent='i am changed';
+//first p tag gets changed
+const allp=document.querySelectorAll('p');
+console.log(allp);//return an array
+
+
+// allp.forEach((o)=> o.textContent='i am changed by function foreach')//every html element gets changed
+const mynewpara=document.createElement('p');
+mynewpara.textContent='i was added via js';
+
+document.querySelector('body').appendChild(mynewpara);
+
+document.querySelector('button').addEventListener('click',(ev)=>
+ // console.log('Button was pressed')
+  ev.target.textContent='I was clicked'
+)
+
+// document.querySelector('#myform').addEventListener('input',(event)=>console.log(event.target.value)
+// )
+//input and change are different.
+document.querySelector('#myform').addEventListener('change',(event)=>console.log(event.target.value)
+)

@@ -1,0 +1,28 @@
+  <!--   <div id="parent-id">
+        <h1>hello word1</h1>
+        <h2 id="test1">hello word2</h2>
+        <h3>hello word3</h3>
+        <h4>hello word4</h4>
+    </div>
+       <script>
+        var parentDOM = document.getElementById('parent-id');
+      //  var test1 = parentDOM.getElementById('test1');
+        //throw error
+        //Uncaught TypeError: parentDOM.getElementById is not a function
+    </script>
+      
+      
+      <table> 
+    <tr><th>one</th><th>two</th><th>three</th></tr>
+    <tr><td rowspan="1">gursangat</td><td>maths <br> science</td><td>100/100</td></tr>
+    <tr><td>gursangat singh</td><td>physics<br>ed</td><td>90/100</td></tr>
+      </table>
+      <ol> 
+    <li>ndejden</li>
+       <li>ndejdemdeo</li>
+    <ul>
+      <li>ndeffffjden</li>
+      <li>ndejden</li>
+    </ul>
+    </li>
+      </ol> -->

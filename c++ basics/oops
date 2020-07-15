@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class laptop()
+{
+    string laptopname;
+    string laptopbrand;
+    string laptopprocessor;
+    float laptopprice;
+    void startup()
+    {
+        cout<<"laptop "<<name<<"has started";
+    }
+}
+int main()
