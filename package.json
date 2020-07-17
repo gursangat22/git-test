@@ -4,7 +4,7 @@
   "description": "This is test directory to learn Git and Node",
   "main": "homework.html",
   "scripts": {
-    "start":"npm run lite",
+    "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server"
   },
